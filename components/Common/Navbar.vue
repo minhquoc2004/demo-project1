@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid px-0">
-    <div class="header">
+  <div class="header">
+    <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-8">
           <div class="menu">
             <div class="feature nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="menu-deal" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,7 +21,7 @@
             <div class="feature">Contact</div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <div class="search-icon">
             <Icon name="material-symbols:search" color="white" font-size="25px" />
             <!-- <IcOutlineYoutubeSearchedFor/> -->
@@ -33,6 +33,11 @@
 </template>
 
 <style lang="scss" scoped>
+  @media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+  }
   .header {
     color: white;
     padding: 20px 80px;

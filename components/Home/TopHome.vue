@@ -101,6 +101,9 @@ export default {
     .img1, .img2  {
       --bs-aspect-ratio: 67.5%;
       position: relative;
+      img {
+        border-radius: 5px;
+      }
       .img-content {
         position: absolute;
         top: 30%;
